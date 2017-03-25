@@ -1,0 +1,16 @@
+body {
+  background-image: url('images/clouds.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  height: 100vh;
+}
+
+/*tv {
+  position: absolute;
+  z-index: 1;
+}*/
+
+/*.home-video {
+  padding-top: 200px !important;
+}*/
