@@ -2,114 +2,192 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <!--Mobile Optimization-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <!--Mobile Optimization-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Christopher James</title>
+  <title>Christopher James</title>
 
-    <!--Google Icon Fonts-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Google Icon Fonts-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- Minified jQuery  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Minified jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
-    <script type='text/javascript' src="script.js"></script>
+  <script type='text/javascript' src="script.js"></script>
 </head>
 
 <body>
+  
+  <!-- <div class='card-panel teal lighten-2'></div> -->
+  
+  <!-- NAVBAR -->
+  <div class="show-navbar navbar-fixed nav-spacing">
+     <nav class="nav-extended black">
+      <div class="nav-wrapper black">
+        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">HOME /</a></li>
+          <li><a href="music.html">MUSIC /</a></li>
+          <li><a href="videos.html">VIDEOS /</a></li>
+          <li><a href="contact.html">CONTACT /</a></li>
+        </ul>
+        
 
-    <!-- NAVBAR -->
-    <div class="navbar-fixed nav-spacing">
-        <nav>
-            <div class="nav-wrapper">
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="music.html">MUSIC</a></li>
-                </ul>
-                <a href="#!" class="brand-logo center">CHRISTOPHER JAMES</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <div class="userView">
+              <div class="background">
+                <img src="images/office.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
-        </nav>
-    </div>
+          </li>
+          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+          <li><a href="#!">Second Link</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="subheader">Subheader</a></li>
+          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
-    
-    <div class="container">
-        <!-- VIDEO -->
-        <div class="row center">
-            <!-- <div class="col s12 m12 l12">
+  <div class="container">
+
+    <!--SLIDER-->
+    <!-- <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="images/chris-black.png">
+          <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/2">
+          <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/3">
+          <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+        <li>
+          <img src="http://lorempixel.com/580/250/nature/4">
+          <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- VIDEO -->
+    <div class="row center">
+      <!-- <div class="col s12 m12 l12">
                 <img src="images/tv-wide.png" class="responsive-img tv" />
             </div> -->
-            <div class="col s12 m12 l12">
-                <div class="video-container">
-                    <iframe width="400" height="225" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen class="center"></iframe>
-                </div>
-            </div>
+      <div class="col s12 m12 l12">
+        <div class="video-container">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen class="center"></iframe>
         </div>
-
-
-        <!-- BOXES -->
-        <div class="row">
-            <div class="col s12 md3 l3">
-                <a href="index.html">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/selfless.jpg">
-                            <span class="text-shadow card-title">HOME</span>
-                        </div>
-                </a>
-                </div>
-            </div>
-            <a href="music.html">
-                <div class="col s12 md3 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/hoe_artwork.png">
-                            <span class="text-shadow card-title">MUSIC</span>
-                        </div>
-
-                    </div>
-                </div>
-            </a>
-            <a href="videos.html">
-                <div class="col s12 md3 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/cj_videos.png">
-                            <span class="text-shadow card-title">VIDEOS</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="contact.html">
-                <div class="col s12 md3 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/head_shot.png">
-                            <span class="text-shadow card-title">CONTACT</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-
-
-
-
+      </div>
     </div>
+
+
+    <!-- BOXES -->
+    <div class="row">
+      <div class="col s12 md3 l3">
+        <a href="index.html">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/selfless.jpg">
+              <span class="text-shadow card-title">HOME</span>
+            </div>
+        </a>
+        </div>
+      </div>
+      <a href="music.html">
+        <div class="col s12 md3 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/hoe_artwork.png">
+              <span class="text-shadow card-title">MUSIC</span>
+            </div>
+
+          </div>
+        </div>
+      </a>
+      <a href="videos.html">
+        <div class="col s12 md3 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/cj_videos.png">
+              <span class="text-shadow card-title">VIDEOS</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="contact.html">
+        <div class="col s12 md3 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/head_shot.png">
+              <span class="text-shadow card-title">CONTACT</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <!--Container-->
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">FOLLOW</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">LINKS</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">HOME</a></li>
+            <li><a class="grey-text text-lighten-3" href="music.html">MUSIC</a></li>
+            <li><a class="grey-text text-lighten-3" href="videos.html">VIDEOS</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Christopher James
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

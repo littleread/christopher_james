@@ -22,27 +22,49 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
+    <script type="text/javascript" src="html5gallery/jquery.js"></script>
+    <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
     <script type='text/javascript' src="script.js"></script>
+
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar-fixed nav-spacing">
-        <nav>
-            <div class="nav-wrapper">
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="music.html">MUSIC</a></li>
-                </ul>
-                <a href="#!" class="brand-logo center">CHRISTOPHER JAMES</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+  <!-- NAVBAR -->
+  <div class="show-navbar navbar-fixed nav-spacing">
+     <nav class="nav-extended black">
+      <div class="nav-wrapper black">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">HOME /</a></li>
+          <li><a href="music.html">MUSIC /</a></li>
+          <li><a href="videos.html">VIDEOS /</a></li>
+          <li><a href="contact.html">CONTACT /</a></li>
+        </ul>
+        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
+
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <div class="userView">
+              <div class="background">
+                <img src="images/office.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
-        </nav>
-    </div>
+          </li>
+          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+          <li><a href="#!">Second Link</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="subheader">Subheader</a></li>
+          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
 
     <div class="container">
@@ -52,43 +74,84 @@
         <!-- LATEST VIDEO -->
         <div class="music-title-box row">
             <div class="col s12 center">
-                <h2 class="music-title">LATEST VIDEO</h2>
+                <h2 class="music-title">VIDEOS</h2>
             </div>
         </div>
         <div class="spacing row music-row-background music-border">
-            <div class="col s12 m6 l6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen></iframe>
+            <div class="col s12 m12 l12">
+              <div style="display:none;" class="html5gallery" data-responsive="true" responsivefullscreen="true" data-skin="darkness" data-width="480" data-height="272">
+                
+                <!-- Tedx -->
+                <a href="https://www.youtube.com/watch?v=cPPYdyfey7g"><img src="https://i.ytimg.com/vi/cPPYdyfey7g/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Perfectionism -->
+                <a href="https://www.youtube.com/watch?v=VTFfix6W61I"><img src="https://i.ytimg.com/vi/VTFfix6W61I/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Mamba Mentality -->
+                <a href="https://www.youtube.com/watch?v=33bP-p1lzCA&t=5s"><img src="https://i.ytimg.com/vi/33bP-p1lzCA/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- American Greed -->
+                <a href="https://www.youtube.com/watch?v=o7twROtgYHg"><img src="https://i.ytimg.com/vi/o7twROtgYHg/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- White Privilege -->
+                <a href="https://www.youtube.com/watch?v=lWDtuu3p0_Q&t=28s"><img src="https://i.ytimg.com/vi/lWDtuu3p0_Q/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Who Are You When No One's Looking -->
+                <a href="https://www.youtube.com/watch?v=bNZVP26tEi0"><img src="https://i.ytimg.com/vi/bNZVP26tEi0/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Pray For Orlando | | Spoken Word -->
+                <a href="https://www.youtube.com/watch?v=SBNfgN1SUeA"><img src="https://i.ytimg.com/vi/SBNfgN1SUeA/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- The Viral Virus | | Spoken Word -->
+                <a href="https://www.youtube.com/watch?v=cP__HN8v9TY&t"><img src="https://i.ytimg.com/vi/cP__HN8v9TY/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Is This The End | | Spoken Word -->
+                <a href="https://www.youtube.com/watch?v=-Y3XUZzsNr0"><img src="https://i.ytimg.com/vi/-Y3XUZzsNr0/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Point Guard to Poet (2) -->
+                <a href="https://www.youtube.com/watch?v=HAgom5mPsag"><img src="https://i.ytimg.com/vi/HAgom5mPsag/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- The Addiction -->
+                <a href="https://www.youtube.com/watch?v=zp_OrCkFO1c"><img src="https://i.ytimg.com/vi/zp_OrCkFO1c/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Chris Cobain | | Spoken Word -->
+                <a href="https://www.youtube.com/watch?v=C13F6olhxyo"><img src="https://i.ytimg.com/vi/C13F6olhxyo/hqdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- PG to Poet | | Spoken Word -->
+                <a href="https://www.youtube.com/watch?v=aBA0aHKKfbg"><img src="https://i.ytimg.com/vi/aBA0aHKKfbg/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Closure | | Spoken Word -->
+                <a href="https://www.youtube.com/watch?v=n_0_dBQsJlM"><img src="https://i.ytimg.com/vi/n_0_dBQsJlM/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Heartbeat -->
+                <a href="https://www.youtube.com/watch?v=h_md3K2lIuo"><img src="https://i.ytimg.com/vi/h_md3K2lIuo/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Dance with the Devil -->
+                <a href="https://www.youtube.com/watch?v=n7F8I4lzzOo&t=1s"><img src="https://i.ytimg.com/vi/n7F8I4lzzOo/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- The Last Dance -->
+                <a href="https://www.youtube.com/watch?v=QR8cr4oBJtw"><img src="https://i.ytimg.com/vi/QR8cr4oBJtw/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- When The Bell Rings -->
+                <a href="https://www.youtube.com/watch?v=yR-no0OF0HU"><img src="https://i.ytimg.com/vi/yR-no0OF0HU/maxresdefault.jpg" alt="Youtube Video"></a>
+                
+                <!-- Dear Big Brother -->
+                <a href="https://www.youtube.com/watch?v=P3s-7mjE8WA"><img src="https://i.ytimg.com/vi/P3s-7mjE8WA/maxresdefault.jpg" alt="Youtube Video"></a>
+                  
+              </div>
             </div>
-            <div class="col s12 m6 l6">
-                <a href="https://itun.es/us/cWyphb" target="_blank">
-                    <img src="images/apple_music.png" alt="listen on Apple Music" class="responsive-img">
-                </a>
-                <a href="https://open.spotify.com/album/07kJw7ZplURKhyJ0UFhmgg" target="_blank">
-                    <img src="images/spotify.png" alt="listen on Spotify" class="responsive-img">
-                </a>
-            </div>
+            
         </div>
 
         <!-- MORE VIDEOS -->
-        <div class="music-title-box row">
+        <div class="music-title-box-more-videos row">
             <div class="col s12 center">
-                <h2 class="music-title">MORE VIDEOS</h2>
+                <h2 class="music-title-more-videos">MORE VIDEOS</h2>
             </div>
         </div>
-        <div class="spacing row music-row-background music-border">
-            <div class="video_wrapper">
-                <div class="col s12 m3 l3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col s12 m3 l3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col s12 m3 l3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col s12 m3 l3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
+        
     </div>
+    <!--CONTAINER ENDS-->
+</body>
+
+</html>

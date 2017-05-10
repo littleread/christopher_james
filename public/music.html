@@ -27,22 +27,41 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar-fixed nav-spacing">
-        <nav>
-            <div class="nav-wrapper">
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="music.html">MUSIC</a></li>
-                </ul>
-                <a href="#!" class="brand-logo center">CHRISTOPHER JAMES</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+  <!-- NAVBAR -->
+  <div class="show-navbar navbar-fixed nav-spacing">
+     <nav class="nav-extended black">
+      <div class="nav-wrapper black">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">HOME /</a></li>
+          <li><a href="music.html">MUSIC /</a></li>
+          <li><a href="videos.html">VIDEOS /</a></li>
+          <li><a href="contact.html">CONTACT /</a></li>
+        </ul>
+        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
+
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <div class="userView">
+              <div class="background">
+                <img src="images/office.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
-        </nav>
-    </div>
+          </li>
+          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+          <li><a href="#!">Second Link</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="subheader">Subheader</a></li>
+          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
 
     <div class="container">
@@ -57,10 +76,11 @@
         </div>
         <div class="spacing row music-row-background music-border">
             <div class="col s12 m8 l4">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305121274&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                <img src="./images/hoe_artwork.png" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 m4 l4">
               <p class="song-title">Heaven On Earth</p>
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305121274&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
                 <a href="https://itun.es/us/cWyphb" target="_blank">
                     <img src="images/apple_music.png" alt="listen on Apple Music" class="responsive-img music-icon-size">
                 </a>
@@ -73,15 +93,21 @@
         <!-- MAMBA -->
         <div class="spacing row music-row-background music-border">
             <div class="col s12 m8 l4">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305126497&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                <img src="./images/selfless.jpg" alt="" class="responsive-img materialboxed">
             </div>
             <div class="col s12 m4 l4">
               <p class="song-title">Mamba</p>
-                <a href="https://itun.es/us/cWyphb" target="_blank">
-                    <img src="images/apple_music.png" alt="listen on Apple Music" class="responsive-img">
-                </a>
-                <a href="https://open.spotify.com/album/07kJw7ZplURKhyJ0UFhmgg" target="_blank">
-                    <img src="images/spotify.png" alt="listen on Spotify" class="responsive-img">
-                </a>
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305126497&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+        </div>
+        
+        <!-- FALLEN ANGEL -->
+        <div class="spacing row music-row-background music-border">
+            <div class="col s12 m8 l4">
+                <img src="./images/fallen_angel_artwork.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 m4 l4">
+              <p class="song-title">Fallen Angel (preview)</p>
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315321618&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
             </div>
         </div>
