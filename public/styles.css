@@ -32,22 +32,23 @@ nav.nav-extended .nav-wrapper {
   min-height: 80px !important;
 }
 
-/*.nav-wrapper {
-    display: none;
-    background: black !important;
-}*/
-
 
 
 /*HOME*/
-/*tv {
-  position: absolute;
-  z-index: 1;
-}*/
 
-/*.home-video {
-  padding-top: 200px !important;
-}*/
+.social-bar-margin-bottom {
+  margin-bottom: 0.5em;
+}
+
+.social-media {
+  padding-top: 0.5em;
+  background:rgba(0,0,0,0.5);
+  margin: 0;
+}
+
+.zero-margin-top {
+  margin-top: 0;
+}
 
 
 
