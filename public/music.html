@@ -2,112 +2,161 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <!--Mobile Optimization-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <!--Mobile Optimization-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Christopher James</title>
+  <title>Christopher James</title>
 
-    <!--Google Icon Fonts-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Google Icon Fonts-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- Minified jQuery  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Minified jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
-    <script type='text/javascript' src="script.js"></script>
+  <script type='text/javascript' src="script.js"></script>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <div class="show-navbar navbar-fixed nav-spacing">
-     <nav class="nav-extended black">
+    <nav class="nav-extended black">
       <div class="nav-wrapper black">
+        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">HOME /</a></li>
           <li><a href="music.html">MUSIC /</a></li>
           <li><a href="videos.html">VIDEOS /</a></li>
+          <li><a href="gallery.html">GALLERY /</a></li>
           <li><a href="contact.html">CONTACT /</a></li>
         </ul>
-        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
 
-        <ul id="slide-out" class="side-nav">
+        <ul id="slide-out" class="side-nav" style="transform: translateX(0px)">
           <li>
             <div class="userView">
               <div class="background">
-                <img src="images/office.jpg">
+                <img src="images/selfless.jpg">
               </div>
-              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-              <a href="#!name"><span class="white-text name">John Doe</span></a>
-              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
           </li>
-          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-          <li><a href="#!">Second Link</a></li>
+            <li><a href="index.html" class="center">HOME</a></li>
+            <li><a href="music.html" class="center">MUSIC</a></li>
+            <li><a href="videos.html" class="center">VIDEOS</a></li>
+            <li><a href="gallery.html" class="center">GALLERY</a></li>
+            <li><a href="contact.html" class="center">CONTACT</a></li>
           <li>
             <div class="divider"></div>
           </li>
-          <li><a class="subheader">Subheader</a></li>
-          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          
+          <div class="col s12 center side-nav-social-media">
+            <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank"><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
+            <a href="https://twitter.com/ChrisJames11" target="_blank"><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
+            <a href="https://soundcloud.com/user-569350128" target="_blank"><img class="responsive-img" src="images/social-media/soundcloud.png" alt=""></a>
+            <a href="https://www.youtube.com/user/ChristopherJamesPoem/videos" target="_blank"><img class="responsive-img" src="images/social-media/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/christopherjames11/" target="_blank"><img class="responsive-img" src="images/social-media/instagram.png" alt=""></a>
+          </div>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
 
 
+  <div class="container">
+
+    <!-- MUSIC -->
+
+    <!-- HEAVEN ON EARTH -->
+    <div class="music-title-box row">
+      <div class="col s12 center">
+        <h2 class="music-title">MUSIC</h2>
+      </div>
+    </div>
+    <div class="spacing row music-row-background music-border">
+      <div class="col s12 m8 l4">
+        <img src="./images/hoe_artwork.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 m4 l4">
+        <p class="song-title">Heaven On Earth</p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305121274&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <a href="https://itun.es/us/cWyphb" target="_blank">
+          <img src="images/apple_music.png" alt="listen on Apple Music" class="responsive-img music-icon-size">
+        </a>
+        <a href="https://open.spotify.com/album/07kJw7ZplURKhyJ0UFhmgg" target="_blank">
+          <img src="images/spotify.png" alt="listen on Spotify" class="responsive-img music-icon-size">
+        </a>
+      </div>
+    </div>
+
+    <!-- MAMBA -->
+    <div class="spacing row music-row-background music-border">
+      <div class="col s12 m8 l4">
+        <img src="./images/selfless.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 m4 l4">
+        <p class="song-title">Mamba</p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305126497&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+    </div>
+
+    <!-- FALLEN ANGEL -->
+    <div class="spacing row music-row-background music-border">
+      <div class="col s12 m8 l4">
+        <img src="./images/fallen_angel_artwork.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 m4 l4">
+        <p class="song-title">Fallen Angel (preview)</p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315321618&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--FOOTER-->
+  <footer class="page-footer black">
     <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">FOLLOW</h5>
+          <div class="col s12">
+            <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
+            <a href="https://twitter.com/ChrisJames11" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
+            <a href="https://soundcloud.com/user-569350128" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/soundcloud.png" alt=""></a>
+            <a href="https://www.youtube.com/user/ChristopherJamesPoem/videos" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/christopherjames11/" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/instagram.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">LINKS</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">HOME</a></li>
+            <li><a class="grey-text text-lighten-3" href="videos.html">VIDEOS</a></li>
+            <li><a class="grey-text text-lighten-3" href="gallery.html">GALLERY</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Christopher James
+        <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+      </div>
+    </div>
+  </footer>
+</body>
 
-        <!-- MUSIC -->
-
-        <!-- HEAVEN ON EARTH -->
-        <div class="music-title-box row">
-            <div class="col s12 center">
-                <h2 class="music-title">MUSIC</h2>
-            </div>
-        </div>
-        <div class="spacing row music-row-background music-border">
-            <div class="col s12 m8 l4">
-                <img src="./images/hoe_artwork.png" alt="" class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 m4 l4">
-              <p class="song-title">Heaven On Earth</p>
-              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305121274&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                <a href="https://itun.es/us/cWyphb" target="_blank">
-                    <img src="images/apple_music.png" alt="listen on Apple Music" class="responsive-img music-icon-size">
-                </a>
-                <a href="https://open.spotify.com/album/07kJw7ZplURKhyJ0UFhmgg" target="_blank">
-                    <img src="images/spotify.png" alt="listen on Spotify" class="responsive-img music-icon-size">
-                </a>
-            </div>
-        </div>
-
-        <!-- MAMBA -->
-        <div class="spacing row music-row-background music-border">
-            <div class="col s12 m8 l4">
-                <img src="./images/selfless.jpg" alt="" class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 m4 l4">
-              <p class="song-title">Mamba</p>
-              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305126497&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            </div>
-        </div>
-        
-        <!-- FALLEN ANGEL -->
-        <div class="spacing row music-row-background music-border">
-            <div class="col s12 m8 l4">
-                <img src="./images/fallen_angel_artwork.png" alt="" class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 m4 l4">
-              <p class="song-title">Fallen Angel (preview)</p>
-              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315321618&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            </div>
-        </div>
+</html>

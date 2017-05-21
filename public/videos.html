@@ -2,29 +2,31 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <!--Mobile Optimization-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <!--Mobile Optimization-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Christopher James</title>
+  <title>Christopher James</title>
 
-    <!--Google Icon Fonts-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Google Icon Fonts-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Minified jQuery  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <!-- Minified jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="html5gallery/jquery.js"></script>
-    <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
-    <script type='text/javascript' src="script.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+
+  <script type='text/javascript' src="script.js"></script>
 
 </head>
 
@@ -32,126 +34,159 @@
 
   <!-- NAVBAR -->
   <div class="show-navbar navbar-fixed nav-spacing">
-     <nav class="nav-extended black">
+    <nav class="nav-extended black">
       <div class="nav-wrapper black">
+        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">HOME /</a></li>
           <li><a href="music.html">MUSIC /</a></li>
           <li><a href="videos.html">VIDEOS /</a></li>
+          <li><a href="gallery.html">GALLERY /</a></li>
           <li><a href="contact.html">CONTACT /</a></li>
         </ul>
-        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
 
-        <ul id="slide-out" class="side-nav">
+        <ul id="slide-out" class="side-nav" style="transform: translateX(0px)">
           <li>
             <div class="userView">
               <div class="background">
-                <img src="images/office.jpg">
+                <img src="images/selfless.jpg">
               </div>
-              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-              <a href="#!name"><span class="white-text name">John Doe</span></a>
-              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
           </li>
-          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-          <li><a href="#!">Second Link</a></li>
+            <li><a href="index.html" class="center">HOME</a></li>
+            <li><a href="music.html" class="center">MUSIC</a></li>
+            <li><a href="videos.html" class="center">VIDEOS</a></li>
+            <li><a href="gallery.html" class="center">GALLERY</a></li>
+            <li><a href="contact.html" class="center">CONTACT</a></li>
           <li>
             <div class="divider"></div>
           </li>
-          <li><a class="subheader">Subheader</a></li>
-          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          
+          <div class="col s12 center side-nav-social-media">
+            <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank"><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
+            <a href="https://twitter.com/ChrisJames11" target="_blank"><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
+            <a href="https://soundcloud.com/user-569350128" target="_blank"><img class="responsive-img" src="images/social-media/soundcloud.png" alt=""></a>
+            <a href="https://www.youtube.com/user/ChristopherJamesPoem/videos" target="_blank"><img class="responsive-img" src="images/social-media/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/christopherjames11/" target="_blank"><img class="responsive-img" src="images/social-media/instagram.png" alt=""></a>
+          </div>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
 
 
-    <div class="container">
+  <div class="container">
 
-        <!-- VIDEOS -->
+    <!-- VIDEOS -->
 
-        <!-- LATEST VIDEO -->
-        <div class="music-title-box row">
-            <div class="col s12 center">
-                <h2 class="music-title">VIDEOS</h2>
-            </div>
-        </div>
-        <div class="spacing row music-row-background music-border">
-            <div class="col s12 m12 l12">
-              <div style="display:none;" class="html5gallery" data-responsive="true" responsivefullscreen="true" data-skin="darkness" data-width="480" data-height="272">
-                
-                <!-- Tedx -->
-                <a href="https://www.youtube.com/watch?v=cPPYdyfey7g"><img src="https://i.ytimg.com/vi/cPPYdyfey7g/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Perfectionism -->
-                <a href="https://www.youtube.com/watch?v=VTFfix6W61I"><img src="https://i.ytimg.com/vi/VTFfix6W61I/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Mamba Mentality -->
-                <a href="https://www.youtube.com/watch?v=33bP-p1lzCA&t=5s"><img src="https://i.ytimg.com/vi/33bP-p1lzCA/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- American Greed -->
-                <a href="https://www.youtube.com/watch?v=o7twROtgYHg"><img src="https://i.ytimg.com/vi/o7twROtgYHg/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- White Privilege -->
-                <a href="https://www.youtube.com/watch?v=lWDtuu3p0_Q&t=28s"><img src="https://i.ytimg.com/vi/lWDtuu3p0_Q/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Who Are You When No One's Looking -->
-                <a href="https://www.youtube.com/watch?v=bNZVP26tEi0"><img src="https://i.ytimg.com/vi/bNZVP26tEi0/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Pray For Orlando | | Spoken Word -->
-                <a href="https://www.youtube.com/watch?v=SBNfgN1SUeA"><img src="https://i.ytimg.com/vi/SBNfgN1SUeA/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- The Viral Virus | | Spoken Word -->
-                <a href="https://www.youtube.com/watch?v=cP__HN8v9TY&t"><img src="https://i.ytimg.com/vi/cP__HN8v9TY/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Is This The End | | Spoken Word -->
-                <a href="https://www.youtube.com/watch?v=-Y3XUZzsNr0"><img src="https://i.ytimg.com/vi/-Y3XUZzsNr0/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Point Guard to Poet (2) -->
-                <a href="https://www.youtube.com/watch?v=HAgom5mPsag"><img src="https://i.ytimg.com/vi/HAgom5mPsag/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- The Addiction -->
-                <a href="https://www.youtube.com/watch?v=zp_OrCkFO1c"><img src="https://i.ytimg.com/vi/zp_OrCkFO1c/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Chris Cobain | | Spoken Word -->
-                <a href="https://www.youtube.com/watch?v=C13F6olhxyo"><img src="https://i.ytimg.com/vi/C13F6olhxyo/hqdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- PG to Poet | | Spoken Word -->
-                <a href="https://www.youtube.com/watch?v=aBA0aHKKfbg"><img src="https://i.ytimg.com/vi/aBA0aHKKfbg/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Closure | | Spoken Word -->
-                <a href="https://www.youtube.com/watch?v=n_0_dBQsJlM"><img src="https://i.ytimg.com/vi/n_0_dBQsJlM/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Heartbeat -->
-                <a href="https://www.youtube.com/watch?v=h_md3K2lIuo"><img src="https://i.ytimg.com/vi/h_md3K2lIuo/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Dance with the Devil -->
-                <a href="https://www.youtube.com/watch?v=n7F8I4lzzOo&t=1s"><img src="https://i.ytimg.com/vi/n7F8I4lzzOo/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- The Last Dance -->
-                <a href="https://www.youtube.com/watch?v=QR8cr4oBJtw"><img src="https://i.ytimg.com/vi/QR8cr4oBJtw/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- When The Bell Rings -->
-                <a href="https://www.youtube.com/watch?v=yR-no0OF0HU"><img src="https://i.ytimg.com/vi/yR-no0OF0HU/maxresdefault.jpg" alt="Youtube Video"></a>
-                
-                <!-- Dear Big Brother -->
-                <a href="https://www.youtube.com/watch?v=P3s-7mjE8WA"><img src="https://i.ytimg.com/vi/P3s-7mjE8WA/maxresdefault.jpg" alt="Youtube Video"></a>
-                  
-              </div>
-            </div>
-            
-        </div>
-
-        <!-- MORE VIDEOS -->
-        <div class="music-title-box-more-videos row">
-            <div class="col s12 center">
-                <h2 class="music-title-more-videos">MORE VIDEOS</h2>
-            </div>
-        </div>
-        
+    <!-- LATEST VIDEO -->
+    <div class="music-title-box row">
+      <div class="col s12 center">
+        <h2 class="music-title">VIDEOS</h2>
+      </div>
     </div>
-    <!--CONTAINER ENDS-->
+    
+    <div class="spacing row music-row-background music-border">
+      <div class="galleria">
+        <!-- Tedx -->
+        <a href="https://www.youtube.com/watch?v=cPPYdyfey7g"><img src="https://i.ytimg.com/vi/cPPYdyfey7g/maxresdefault.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=VTFfix6W61I"><img src="https://i.ytimg.com/vi/VTFfix6W61I/maxresdefault.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=33bP-p1lzCA&t=5s"><img src="https://i.ytimg.com/vi/33bP-p1lzCA/maxresdefault.jpg"></a>
+        <!-- American Greed -->
+        <a href="https://www.youtube.com/watch?v=o7twROtgYHg"><img src="https://i.ytimg.com/vi/o7twROtgYHg/maxresdefault.jpg"></a>
+
+        <!-- White Privilege -->
+        <a href="https://www.youtube.com/watch?v=lWDtuu3p0_Q&t=28s"><img src="https://i.ytimg.com/vi/lWDtuu3p0_Q/maxresdefault.jpg"></a>
+
+        <!-- Who Are You When No One's Looking -->
+        <a href="https://www.youtube.com/watch?v=bNZVP26tEi0"><img src="https://i.ytimg.com/vi/bNZVP26tEi0/maxresdefault.jpg"></a>
+
+        <!-- Pray For Orlando | | Spoken Word -->
+        <a href="https://www.youtube.com/watch?v=SBNfgN1SUeA"><img src="https://i.ytimg.com/vi/SBNfgN1SUeA/maxresdefault.jpg"></a>
+
+        <!-- The Viral Virus | | Spoken Word -->
+        <a href="https://www.youtube.com/watch?v=cP__HN8v9TY&t"><img src="https://i.ytimg.com/vi/cP__HN8v9TY/maxresdefault.jpg"></a>
+
+        <!-- Is This The End | | Spoken Word -->
+        <a href="https://www.youtube.com/watch?v=-Y3XUZzsNr0"><img src="https://i.ytimg.com/vi/-Y3XUZzsNr0/maxresdefault.jpg"></a>
+
+        <!-- Point Guard to Poet (2) -->
+        <a href="https://www.youtube.com/watch?v=HAgom5mPsag"><img src="https://i.ytimg.com/vi/HAgom5mPsag/maxresdefault.jpg"></a>
+
+        <!-- The Addiction -->
+        <a href="https://www.youtube.com/watch?v=zp_OrCkFO1c"><img src="https://i.ytimg.com/vi/zp_OrCkFO1c/maxresdefault.jpg"></a>
+
+        <!-- Chris Cobain | | Spoken Word -->
+        <a href="https://www.youtube.com/watch?v=C13F6olhxyo"><img src="https://i.ytimg.com/vi/C13F6olhxyo/hqdefault.jpg"></a>
+
+        <!-- PG to Poet | | Spoken Word -->
+        <a href="https://www.youtube.com/watch?v=aBA0aHKKfbg"><img src="https://i.ytimg.com/vi/aBA0aHKKfbg/maxresdefault.jpg"></a>
+
+        <!-- Closure | | Spoken Word -->
+        <a href="https://www.youtube.com/watch?v=n_0_dBQsJlM"><img src="https://i.ytimg.com/vi/n_0_dBQsJlM/maxresdefault.jpg"></a>
+
+        <!-- Heartbeat -->
+        <a href="https://www.youtube.com/watch?v=h_md3K2lIuo"><img src="https://i.ytimg.com/vi/h_md3K2lIuo/maxresdefault.jpg"></a>
+
+        <!-- Dance with the Devil -->
+        <a href="https://www.youtube.com/watch?v=n7F8I4lzzOo&t=1s"><img src="https://i.ytimg.com/vi/n7F8I4lzzOo/maxresdefault.jpg"></a>
+
+        <!-- The Last Dance -->
+        <a href="https://www.youtube.com/watch?v=QR8cr4oBJtw"><img src="https://i.ytimg.com/vi/QR8cr4oBJtw/maxresdefault.jpg"></a>
+
+        <!-- When The Bell Rings -->
+        <a href="https://www.youtube.com/watch?v=yR-no0OF0HU"><img src="https://i.ytimg.com/vi/yR-no0OF0HU/maxresdefault.jpg"></a>
+
+        <!-- Dear Big Brother -->
+        <a href="https://www.youtube.com/watch?v=P3s-7mjE8WA"><img src="https://i.ytimg.com/vi/P3s-7mjE8WA/maxresdefault.jpg"></a>
+      </div>
+    </div>
+    
+
+
+    <!-- MORE VIDEOS -->
+    <!-- <div class="music-title-box-more-videos row">
+      <div class="col s12 center">
+        <h2 class="music-title-more-videos">MORE VIDEOS</h2>
+      </div>
+    </div> -->
+
+  </div>
+  <!--CONTAINER ENDS-->
+
+  <!--FOOTER-->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">FOLLOW</h5>
+          <div class="col s12">
+            <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
+            <a href="https://twitter.com/ChrisJames11" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
+            <a href="https://soundcloud.com/user-569350128" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/soundcloud.png" alt=""></a>
+            <a href="https://www.youtube.com/user/ChristopherJamesPoem/videos" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/christopherjames11/" target="_blank" class="breadcrumb"><img class="responsive-img" src="images/social-media/instagram.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">LINKS</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">HOME</a></li>
+            <li><a class="grey-text text-lighten-3" href="music.html">MUSIC</a></li>
+            <li><a class="grey-text text-lighten-3" href="gallery.html">GALLERY</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Christopher James
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
