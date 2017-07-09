@@ -14,7 +14,14 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Final Tiles Grid Gallery CSS -->
+  <link rel="stylesheet" href="css/finaltilesgallery.css">
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -23,10 +30,38 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 
-  <script type='text/javascript' src="script.js"></script>
+  <script type='text/javascript' src="javascript/script.js"></script>
+
+  <!-- Final Tiles Grid Gallery script -->
+  <script src="javascript/jquery.finaltilesgallery.js"></script>
+
+  <!-- Magnific Popup script -->
+  <!-- http://dimsemenov.com/plugins/magnific-popup/ -->
+  <script src="javascript/jquery.magnific-popup.min.js"></script>
+  
+  <script>
+    $(function() {
+
+      $(".final-tiles-gallery").finalTilesGallery({
+        selectedFilter: 'all'
+      });
+
+      $(document).ready(function() {
+        $('.final-tiles-gallery').magnificPopup({
+          delegate: '.tile:not(.ftg-hidden) .tile-inner',
+          type: 'image',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+          }
+        });
+      });
+    });
+  </script>
+
+
 </head>
 
 <body>
@@ -35,7 +70,7 @@
   <div class="show-navbar navbar-fixed nav-spacing">
     <nav class="nav-extended black">
       <div class="nav-wrapper black">
-        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
+        <a href="index.html" class="brand-logo center"><img class="responsive-img" src="images/logos/chris-logo-small.png" alt=""></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">HOME /</a></li>
           <li><a href="music.html">MUSIC /</a></li>
@@ -44,7 +79,7 @@
           <li><a href="contact.html">CONTACT /</a></li>
         </ul>
 
-        <ul id="slide-out" class="side-nav" style="transform: translateX(0px)">
+        <ul id="slide-out" class="side-nav">
           <li>
             <div class="userView">
               <div class="background">
@@ -52,15 +87,15 @@
               </div>
             </div>
           </li>
-            <li><a href="index.html" class="center">HOME</a></li>
-            <li><a href="music.html" class="center">MUSIC</a></li>
-            <li><a href="videos.html" class="center">VIDEOS</a></li>
-            <li><a href="gallery.html" class="center">GALLERY</a></li>
-            <li><a href="contact.html" class="center">CONTACT</a></li>
+          <li><a href="index.html" class="center">HOME</a></li>
+          <li><a href="music.html" class="center">MUSIC</a></li>
+          <li><a href="videos.html" class="center">VIDEOS</a></li>
+          <li><a href="gallery.html" class="center">GALLERY</a></li>
+          <li><a href="contact.html" class="center">CONTACT</a></li>
           <li>
             <div class="divider"></div>
           </li>
-          
+
           <div class="col s12 center side-nav-social-media">
             <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank"><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
             <a href="https://twitter.com/ChrisJames11" target="_blank"><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
@@ -73,26 +108,98 @@
       </div>
     </nav>
   </div>
-  
+
   <div class="container">
-  
-  <div class="music-title-box row">
-    <div class="col s12 center">
-      <h2 class="music-title">GALLERY</h2>
+
+    <div class="music-title-box row">
+      <div class="col s12 center">
+        <h2 class="music-title">GALLERY</h2>
+      </div>
     </div>
-  </div>
-  
-  <div class="spacing row music-row-background music-border">
-    <div class="galleria">
-      <img src="images/selfless.jpg">
-      <img src="images/gallery/chris-mic.png">
-      <img src="images/gallery/chris-performance.png">
-      <img src="images/gallery/head-shot.jpg">
+
+    <div class="spacing row music-row-background music-border">
+
+      <div id="gallery" class="final-tiles-gallery">
+        <div class="ftg-filters">
+          <a href="#ftg-set-ftgall">All</a>
+          <a href="#ftg-set-performances">Performances</a>
+          <a href="#ftg-set-artwork">Artwork</a>
+          <a href="#ftg-set-photoshoots">Photoshoots</a>
+        </div>
+        <div class="ftg-items">
+          <div class="tile ftg-set-performances">
+            <a class="tile-inner" href="images/gallery/performances/tedx.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/performances/tedx.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-performances">
+            <a class="tile-inner" href="images/gallery/performances/chris-performance.png">
+              <img class="item" height='500' src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/performances/chris-performance.png" />
+            </a>
+          </div>
+          <div class="tile ftg-set-artwork">
+            <a class="tile-inner" href="images/gallery/artwork/self-LESS.jpg">
+              <img class="item" width="350" height="350" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/artwork/self-LESS.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-photoshoots">
+            <a class="tile-inner" href="images/gallery/photoshoots/chris-mic.png">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/photoshoots/chris-mic.png" />
+            </a>
+          </div>
+          <div class="tile ftg-set-performances">
+            <a class="tile-inner" href="images/gallery/performances/chris_fiu.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/performances/chris_fiu.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-artwork">
+            <a class="tile-inner" href="images/gallery/artwork/hoe-artwork.png">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/artwork/hoe-artwork.png" />
+            </a>
+          </div>
+          <div class="tile ftg-set-photoshoots">
+            <a class="tile-inner" href="images/gallery/photoshoots/head-shot.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/photoshoots/head-shot.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-performances">
+            <a class="tile-inner" href="images/gallery/performances/chris_mdc1.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/performances/chris_mdc1.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-artwork">
+            <a class="tile-inner" href="images/gallery/artwork/fallen-angels-artwork.png">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/artwork/fallen-angels-artwork.png" />
+            </a>
+          </div>
+          </div>
+          <div class="tile ftg-set-photoshoots">
+            <a class="tile-inner" href="images/gallery/photoshoots/chris.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/photoshoots/chris.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-performances">
+            <a class="tile-inner" href="images/gallery/performances/chris_suas.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/performances/chris_suas.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-performances">
+            <a class="tile-inner" href="images/gallery/performances/chris_mdc2.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/performances/chris_mdc2.jpg" />
+            </a>
+          </div>
+          <div class="tile ftg-set-photoshoots">
+            <a class="tile-inner" href="images/gallery/photoshoots/chris_hoodie.jpg">
+              <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/gallery/photoshoots/chris_hoodie.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
 
   </div>
-  
+
   <!--FOOTER-->
   <footer class="page-footer black">
     <div class="container">

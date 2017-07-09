@@ -14,7 +14,7 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -23,11 +23,13 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+
+  <script type='text/javascript' src="javascript/script.js"></script>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
-
-  <script type='text/javascript' src="script.js"></script>
-
+  <link rel="stylesheet" href="css/lightbox.css">
+  <script type="text/javascript" src='javascript/video-lightbox.js'></script>
+  
 </head>
 
 <body>
@@ -36,7 +38,7 @@
   <div class="show-navbar navbar-fixed nav-spacing">
     <nav class="nav-extended black">
       <div class="nav-wrapper black">
-        <a href="#!" class="brand-logo center"><img class="responsive-img" src="images/chris-logo-small.png" alt=""></a>
+        <a href="index.html" class="brand-logo center"><img class="responsive-img" src="images/logos/chris-logo-small.png" alt=""></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">HOME /</a></li>
           <li><a href="music.html">MUSIC /</a></li>
@@ -45,7 +47,7 @@
           <li><a href="contact.html">CONTACT /</a></li>
         </ul>
 
-        <ul id="slide-out" class="side-nav" style="transform: translateX(0px)">
+        <ul id="slide-out" class="side-nav">
           <li>
             <div class="userView">
               <div class="background">
@@ -53,15 +55,15 @@
               </div>
             </div>
           </li>
-            <li><a href="index.html" class="center">HOME</a></li>
-            <li><a href="music.html" class="center">MUSIC</a></li>
-            <li><a href="videos.html" class="center">VIDEOS</a></li>
-            <li><a href="gallery.html" class="center">GALLERY</a></li>
-            <li><a href="contact.html" class="center">CONTACT</a></li>
+          <li><a href="index.html" class="center">HOME</a></li>
+          <li><a href="music.html" class="center">MUSIC</a></li>
+          <li><a href="videos.html" class="center">VIDEOS</a></li>
+          <li><a href="gallery.html" class="center">GALLERY</a></li>
+          <li><a href="contact.html" class="center">CONTACT</a></li>
           <li>
             <div class="divider"></div>
           </li>
-          
+
           <div class="col s12 center side-nav-social-media">
             <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank"><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
             <a href="https://twitter.com/ChrisJames11" target="_blank"><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
@@ -78,79 +80,96 @@
 
   <div class="container">
 
-    <!-- VIDEOS -->
-
     <!-- LATEST VIDEO -->
     <div class="music-title-box row">
       <div class="col s12 center">
-        <h2 class="music-title">VIDEOS</h2>
+        <h2 class="music-title">LATEST VIDEO</h2>
       </div>
     </div>
-    
     <div class="spacing row music-row-background music-border">
-      <div class="galleria">
-        <!-- Tedx -->
-        <a href="https://www.youtube.com/watch?v=cPPYdyfey7g"><img src="https://i.ytimg.com/vi/cPPYdyfey7g/maxresdefault.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=VTFfix6W61I"><img src="https://i.ytimg.com/vi/VTFfix6W61I/maxresdefault.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=33bP-p1lzCA&t=5s"><img src="https://i.ytimg.com/vi/33bP-p1lzCA/maxresdefault.jpg"></a>
-        <!-- American Greed -->
-        <a href="https://www.youtube.com/watch?v=o7twROtgYHg"><img src="https://i.ytimg.com/vi/o7twROtgYHg/maxresdefault.jpg"></a>
+      <div class="col s12 m7 l7">
+        <div class="video-container">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/cPPYdyfey7g" frameborder="0" allowfullscreen class="center"></iframe>
+        </div>
+      </div>
+      <div class="col s12 m5 l5">
+        <p class='latest-video-title'>Christopher James - Why Short Cuts Lead to Dead Ends</p>
+          <!-- <span class='latest-video-share'>Share</span> -->
+          <a href="https://www.facebook.com/ChristopherJamesPoet/" target="_blank" class='share-social-media'><img class="responsive-img" src="images/social-media/facebook.png" alt=""></a>
+          <a href="https://twitter.com/ChrisJames11_" target="_blank" class='share-social-media'><img class="responsive-img" src="images/social-media/twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/christopherjames11/" target="_blank" class='share-social-media'><img class="responsive-img" src="images/social-media/instagram.png" alt=""></a>
+      </div>
+      
+    </div>
 
-        <!-- White Privilege -->
-        <a href="https://www.youtube.com/watch?v=lWDtuu3p0_Q&t=28s"><img src="https://i.ytimg.com/vi/lWDtuu3p0_Q/maxresdefault.jpg"></a>
-
-        <!-- Who Are You When No One's Looking -->
-        <a href="https://www.youtube.com/watch?v=bNZVP26tEi0"><img src="https://i.ytimg.com/vi/bNZVP26tEi0/maxresdefault.jpg"></a>
-
-        <!-- Pray For Orlando | | Spoken Word -->
-        <a href="https://www.youtube.com/watch?v=SBNfgN1SUeA"><img src="https://i.ytimg.com/vi/SBNfgN1SUeA/maxresdefault.jpg"></a>
-
-        <!-- The Viral Virus | | Spoken Word -->
-        <a href="https://www.youtube.com/watch?v=cP__HN8v9TY&t"><img src="https://i.ytimg.com/vi/cP__HN8v9TY/maxresdefault.jpg"></a>
-
-        <!-- Is This The End | | Spoken Word -->
-        <a href="https://www.youtube.com/watch?v=-Y3XUZzsNr0"><img src="https://i.ytimg.com/vi/-Y3XUZzsNr0/maxresdefault.jpg"></a>
-
-        <!-- Point Guard to Poet (2) -->
-        <a href="https://www.youtube.com/watch?v=HAgom5mPsag"><img src="https://i.ytimg.com/vi/HAgom5mPsag/maxresdefault.jpg"></a>
-
-        <!-- The Addiction -->
-        <a href="https://www.youtube.com/watch?v=zp_OrCkFO1c"><img src="https://i.ytimg.com/vi/zp_OrCkFO1c/maxresdefault.jpg"></a>
-
-        <!-- Chris Cobain | | Spoken Word -->
-        <a href="https://www.youtube.com/watch?v=C13F6olhxyo"><img src="https://i.ytimg.com/vi/C13F6olhxyo/hqdefault.jpg"></a>
-
-        <!-- PG to Poet | | Spoken Word -->
-        <a href="https://www.youtube.com/watch?v=aBA0aHKKfbg"><img src="https://i.ytimg.com/vi/aBA0aHKKfbg/maxresdefault.jpg"></a>
-
-        <!-- Closure | | Spoken Word -->
-        <a href="https://www.youtube.com/watch?v=n_0_dBQsJlM"><img src="https://i.ytimg.com/vi/n_0_dBQsJlM/maxresdefault.jpg"></a>
-
-        <!-- Heartbeat -->
-        <a href="https://www.youtube.com/watch?v=h_md3K2lIuo"><img src="https://i.ytimg.com/vi/h_md3K2lIuo/maxresdefault.jpg"></a>
-
-        <!-- Dance with the Devil -->
-        <a href="https://www.youtube.com/watch?v=n7F8I4lzzOo&t=1s"><img src="https://i.ytimg.com/vi/n7F8I4lzzOo/maxresdefault.jpg"></a>
-
-        <!-- The Last Dance -->
-        <a href="https://www.youtube.com/watch?v=QR8cr4oBJtw"><img src="https://i.ytimg.com/vi/QR8cr4oBJtw/maxresdefault.jpg"></a>
-
-        <!-- When The Bell Rings -->
-        <a href="https://www.youtube.com/watch?v=yR-no0OF0HU"><img src="https://i.ytimg.com/vi/yR-no0OF0HU/maxresdefault.jpg"></a>
-
-        <!-- Dear Big Brother -->
-        <a href="https://www.youtube.com/watch?v=P3s-7mjE8WA"><img src="https://i.ytimg.com/vi/P3s-7mjE8WA/maxresdefault.jpg"></a>
+    <!-- VIDEOS -->
+    <div class="music-title-box row">
+      <div class="col s12 center">
+        <h2 class="music-title">MORE VIDEOS</h2>
       </div>
     </div>
     
+    <div class='row'>
+    <!-- Perfectionsim -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=VTFfix6W61I"><img src="https://i.ytimg.com/vi/VTFfix6W61I/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Mamba -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=33bP-p1lzCA&t=5s"><img src="https://i.ytimg.com/vi/33bP-p1lzCA/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- American Greed -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=o7twROtgYHg"><img src="https://i.ytimg.com/vi/o7twROtgYHg/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- White Privilege -->
+    <a data-fancybox='group' <a href="https://www.youtube.com/watch?v=lWDtuu3p0_Q&t=28s"><img src="https://i.ytimg.com/vi/lWDtuu3p0_Q/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Who Are You When No One's Looking -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=bNZVP26tEi0"><img src="https://i.ytimg.com/vi/bNZVP26tEi0/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Pray For Orlando | | Spoken Word -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=SBNfgN1SUeA"><img src="https://i.ytimg.com/vi/SBNfgN1SUeA/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- The Viral Virus | | Spoken Word -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=cP__HN8v9TY&t"><img src="https://i.ytimg.com/vi/cP__HN8v9TY/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Is This The End | | Spoken Word -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=-Y3XUZzsNr0"><img src="https://i.ytimg.com/vi/-Y3XUZzsNr0/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Point Guard to Poet (2) -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=HAgom5mPsag"><img src="https://i.ytimg.com/vi/HAgom5mPsag/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- The Addiction -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=zp_OrCkFO1c"><img src="https://i.ytimg.com/vi/zp_OrCkFO1c/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Chris Cobain | | Spoken Word -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=C13F6olhxyo"><img src="images/misc/chris_cobain.jpg" class='col s3 video'></a>
+    
+    <!-- PG to Poet | | Spoken Word -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=aBA0aHKKfbg"><img src="https://i.ytimg.com/vi/aBA0aHKKfbg/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Closure | | Spoken Word -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=n_0_dBQsJlM"><img src="images/misc/closure.jpg" class='col s3 video'></a>
+    
+    <!-- Heartbeat -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=h_md3K2lIuo"><img src="https://i.ytimg.com/vi/h_md3K2lIuo/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Dance with the Devil -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=n7F8I4lzzOo&t=1s"><img src="https://i.ytimg.com/vi/n7F8I4lzzOo/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- The Last Dance -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=QR8cr4oBJtw"><img src="https://i.ytimg.com/vi/QR8cr4oBJtw/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- When The Bell Rings -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=yR-no0OF0HU"><img src="https://i.ytimg.com/vi/yR-no0OF0HU/maxresdefault.jpg" class='col s3 video'></a>
+    
+    <!-- Dear Big Brother -->
+    <a data-fancybox='group' href="https://www.youtube.com/watch?v=P3s-7mjE8WA"><img src="https://i.ytimg.com/vi/P3s-7mjE8WA/maxresdefault.jpg" class='col s3 video'></a>
+    
+    </div>
+
+  </div>
 
 
-    <!-- MORE VIDEOS -->
-    <!-- <div class="music-title-box-more-videos row">
-      <div class="col s12 center">
-        <h2 class="music-title-more-videos">MORE VIDEOS</h2>
-      </div>
-    </div> -->
+
 
   </div>
   <!--CONTAINER ENDS-->
@@ -186,7 +205,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
