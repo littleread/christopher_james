@@ -1,1 +1,0 @@
-$(function(){console.log("ready!");$(".button-collapse").sideNav({menuWidth:150,edge:"right",closeOnClick:!0,draggable:!0});$(".slider").slider()});
